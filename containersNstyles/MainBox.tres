@@ -1,0 +1,7 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://d4kddtlrkiy0m"]
+
+[ext_resource type="Texture2D" uid="uid://b8shop1mgf3oq" path="res://assets/metin2Box.png" id="1_neufg"]
+
+[resource]
+texture = ExtResource("1_neufg")
+region_rect = Rect2(621, 288.5, 0, 1)
