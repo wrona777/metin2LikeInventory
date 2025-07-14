@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://injji6ysmgko"]
+
+[ext_resource type="Script" uid="uid://buskuwqcvllse" path="res://scripts/classes/itemClass.gd" id="1_mwwhc"]
+[ext_resource type="Texture2D" uid="uid://b2ecqinfg6pkk" path="res://assets/OneSlotPlaceholder.png" id="2_0an6x"]
+
+[resource]
+script = ExtResource("1_mwwhc")
+name = "placeholder"
+texture = ExtResource("2_0an6x")
+width = 74
+height = 74
+metadata/_custom_type_script = "uid://buskuwqcvllse"

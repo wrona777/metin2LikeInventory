@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://bybox27mhpvrn"]
+
+[ext_resource type="Script" uid="uid://buskuwqcvllse" path="res://scripts/classes/itemClass.gd" id="1_00ekj"]
+[ext_resource type="Texture2D" uid="uid://dmj04bnnh27pu" path="res://assets/TwoSlotPlaceholder.png" id="2_uslak"]
+
+[resource]
+script = ExtResource("1_00ekj")
+name = "placeholder"
+texture = ExtResource("2_uslak")
+width = 74
+height = 148
+metadata/_custom_type_script = "uid://buskuwqcvllse"
