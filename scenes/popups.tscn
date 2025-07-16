@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://cvqsyqk6acgjs"]
+
+[node name="popups" type="Control"]
+layout_mode = 3
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+grow_horizontal = 2
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="ItemPopup" type="PopupPanel" parent="UI"]
+unique_name_in_owner = true
+initial_position = 1
+size = Vector2i(534, 413)
+visible = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/ItemPopup"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -263.0
+offset_top = 4.0
+offset_right = 263.0
+offset_bottom = 409.0
+grow_horizontal = 2
+theme_override_constants/separation = 15
+
+[node name="Name" type="Label" parent="UI/ItemPopup/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.996078, 0.823529, 0.360784, 1)
+text = "Zatruty miecz +9"
+
+[node name="lvlReq" type="Label" parent="UI/ItemPopup/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.654232, 0.654232, 0.654232, 1)
+text = "Od poziomu: 75"
+
+[node name="baseStats" type="Label" parent="UI/ItemPopup/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.356863, 0.772549, 0.278431, 1)
+text = "Wartość ataku: 237 - 277
+Szybkość Ataku +26%"
+horizontal_alignment = 1
+
+[node name="rolls" type="Label" parent="UI/ItemPopup/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.781771, 0.997168, 0.722426, 1)
+text = "Średnie obrażenia: 44%
+Obrażenia umiejętności: 10%
+Szansa na spowolnienie +2%
+Silny przeciwko mistykom +10%"
+horizontal_alignment = 1
+
+[node name="class" type="Label" parent="UI/ItemPopup/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0.654232, 0.654232, 0.654232, 1)
+text = "[ Do Ubrania ]
+Wojownik Ninja Sura"
+horizontal_alignment = 1
