@@ -1,4 +1,8 @@
-[gd_scene format=3 uid="uid://cvqsyqk6acgjs"]
+[gd_scene load_steps=3 format=3 uid="uid://cvqsyqk6acgjs"]
+
+[ext_resource type="Texture2D" uid="uid://8krp8u5yi80o" path="res://assets/ItemPopUpBox.png" id="1_fk52g"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_201id"]
 
 [node name="popups" type="Control"]
 layout_mode = 3
@@ -12,33 +16,52 @@ grow_horizontal = 2
 [node name="ItemPopup" type="PopupPanel" parent="UI"]
 unique_name_in_owner = true
 initial_position = 1
-size = Vector2i(534, 413)
+size = Vector2i(450, 370)
 visible = true
+theme_override_styles/panel = SubResource("StyleBoxTexture_201id")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="UI/ItemPopup"]
+[node name="NinePatchRect" type="NinePatchRect" parent="UI/ItemPopup"]
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -263.0
-offset_top = 4.0
-offset_right = 263.0
-offset_bottom = 409.0
+offset_left = -225.0
+offset_right = 225.0
+offset_bottom = 370.0
 grow_horizontal = 2
+texture = ExtResource("1_fk52g")
+region_rect = Rect2(500, 149, 503, 503)
+patch_margin_left = 18
+patch_margin_top = 30
+patch_margin_right = 19
+patch_margin_bottom = 19
+
+[node name="MarginContainer" type="MarginContainer" parent="UI/ItemPopup/NinePatchRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UI/ItemPopup/NinePatchRect/MarginContainer"]
+layout_mode = 2
 theme_override_constants/separation = 15
 
-[node name="Name" type="Label" parent="UI/ItemPopup/VBoxContainer"]
+[node name="Name" type="Label" parent="UI/ItemPopup/NinePatchRect/MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0.996078, 0.823529, 0.360784, 1)
 text = "Zatruty miecz +9"
 
-[node name="lvlReq" type="Label" parent="UI/ItemPopup/VBoxContainer"]
+[node name="lvlReq" type="Label" parent="UI/ItemPopup/NinePatchRect/MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0.654232, 0.654232, 0.654232, 1)
 text = "Od poziomu: 75"
 
-[node name="baseStats" type="Label" parent="UI/ItemPopup/VBoxContainer"]
+[node name="baseStats" type="Label" parent="UI/ItemPopup/NinePatchRect/MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0.356863, 0.772549, 0.278431, 1)
@@ -46,7 +69,7 @@ text = "Wartość ataku: 237 - 277
 Szybkość Ataku +26%"
 horizontal_alignment = 1
 
-[node name="rolls" type="Label" parent="UI/ItemPopup/VBoxContainer"]
+[node name="rolls" type="Label" parent="UI/ItemPopup/NinePatchRect/MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0.781771, 0.997168, 0.722426, 1)
@@ -56,7 +79,7 @@ Szansa na spowolnienie +2%
 Silny przeciwko mistykom +10%"
 horizontal_alignment = 1
 
-[node name="class" type="Label" parent="UI/ItemPopup/VBoxContainer"]
+[node name="class" type="Label" parent="UI/ItemPopup/NinePatchRect/MarginContainer/VBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0.654232, 0.654232, 0.654232, 1)
