@@ -1,8 +1,10 @@
-[gd_scene load_steps=2 format=3 uid="uid://cdxo6u7rdpwee"]
+[gd_scene load_steps=3 format=3 uid="uid://cdxo6u7rdpwee"]
 
 [ext_resource type="Script" uid="uid://bpefd4s8di1pu" path="res://scripts/item.gd" id="1_4gq7n"]
+[ext_resource type="Resource" uid="uid://injji6ysmgko" path="res://objects/items/placeholder1Slot.tres" id="2_s8enn"]
 
 [node name="Item" type="Control"]
+custom_minimum_size = Vector2(74, 74)
 layout_mode = 3
 anchors_preset = 8
 anchor_left = 0.5
@@ -12,6 +14,7 @@ anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_4gq7n")
+item = ExtResource("2_s8enn")
 
 [node name="Texture" type="TextureRect" parent="."]
 custom_minimum_size = Vector2(74, 74)
@@ -28,3 +31,6 @@ offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
 expand_mode = 3
+
+[connection signal="mouse_entered" from="Texture" to="." method="_on_texture_mouse_entered"]
+[connection signal="mouse_exited" from="Texture" to="." method="_on_texture_mouse_exited"]

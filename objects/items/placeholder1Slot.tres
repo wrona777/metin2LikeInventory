@@ -9,4 +9,12 @@ name = "placeholder"
 texture = ExtResource("2_0an6x")
 width = 74
 height = 74
+lvl_req = 15
+base_stats = "Wartość ataku: 14 - 22
+Szybkość ataku +22%"
+rolls = "Silny przeciwko faliopatos +10%
+Siła +8
+Szansa na cios krytyczny +10%
+"
+classes = "Ninja"
 metadata/_custom_type_script = "uid://buskuwqcvllse"

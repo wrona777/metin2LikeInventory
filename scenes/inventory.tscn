@@ -1,19 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://c4hhr4molfvt5"]
+[gd_scene load_steps=4 format=3 uid="uid://c4hhr4molfvt5"]
 
 [ext_resource type="Texture2D" uid="uid://b8shop1mgf3oq" path="res://assets/metin2Box.png" id="1_qw0r6"]
 [ext_resource type="PackedScene" uid="uid://bves73lw2mxlm" path="res://scenes/slot.tscn" id="2_hj2ta"]
+[ext_resource type="PackedScene" uid="uid://cdxo6u7rdpwee" path="res://scenes/item.tscn" id="3_53g1v"]
 
 [node name="Inventory" type="NinePatchRect"]
-anchors_preset = 8
-anchor_left = 0.5
+anchors_preset = 4
 anchor_top = 0.5
-anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -210.0
 offset_top = -360.0
-offset_right = 210.0
+offset_right = 420.0
 offset_bottom = 360.0
-grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_qw0r6")
 region_rect = Rect2(620, 253, 369, 370)
@@ -48,6 +45,9 @@ theme_override_constants/v_separation = 0
 columns = 5
 
 [node name="Slot" parent="MarginContainer/GridContainer" instance=ExtResource("2_hj2ta")]
+layout_mode = 2
+
+[node name="Item" parent="MarginContainer/GridContainer/Slot" instance=ExtResource("3_53g1v")]
 layout_mode = 2
 
 [node name="Slot2" parent="MarginContainer/GridContainer" instance=ExtResource("2_hj2ta")]
