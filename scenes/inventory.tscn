@@ -5,12 +5,16 @@
 [ext_resource type="PackedScene" uid="uid://cdxo6u7rdpwee" path="res://scenes/item.tscn" id="3_53g1v"]
 
 [node name="Inventory" type="NinePatchRect"]
-anchors_preset = 4
+anchors_preset = 8
+anchor_left = 0.5
 anchor_top = 0.5
+anchor_right = 0.5
 anchor_bottom = 0.5
+offset_left = -210.0
 offset_top = -360.0
-offset_right = 420.0
+offset_right = 210.0
 offset_bottom = 360.0
+grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_qw0r6")
 region_rect = Rect2(620, 253, 369, 370)

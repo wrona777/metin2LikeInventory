@@ -13,6 +13,7 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 grow_horizontal = 2
 grow_vertical = 2
+mouse_force_pass_scroll_events = false
 script = ExtResource("1_4gq7n")
 item = ExtResource("2_s8enn")
 
@@ -30,6 +31,7 @@ offset_right = 20.0
 offset_bottom = 20.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 0
 expand_mode = 3
 
 [connection signal="mouse_entered" from="Texture" to="." method="_on_texture_mouse_entered"]
