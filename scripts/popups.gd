@@ -26,5 +26,5 @@ func _process(_delta):
 
 func update_popup_position():
 	var mouse_pos = get_viewport().get_mouse_position()
-	var offset = Vector2(20, 20)
+	var offset = Vector2(5, 5)
 	%ItemPopup.position = mouse_pos + offset

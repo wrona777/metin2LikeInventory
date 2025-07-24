@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://c5pgkfveactdm"]
+[gd_scene load_steps=2 format=3 uid="uid://c5pgkfveactdm"]
+
+[ext_resource type="PackedScene" uid="uid://c4hhr4molfvt5" path="res://scenes/inventory.tscn" id="1_w2twt"]
 
 [node name="main_scene" type="Control"]
 layout_mode = 3
@@ -7,3 +9,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Inventory" parent="." instance=ExtResource("1_w2twt")]
+layout_mode = 1

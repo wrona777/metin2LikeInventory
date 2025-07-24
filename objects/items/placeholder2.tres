@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://b5mcw7k4ag266"]
+
+[ext_resource type="Script" uid="uid://buskuwqcvllse" path="res://scripts/classes/itemClass.gd" id="1_hpbjd"]
+[ext_resource type="Texture2D" uid="uid://b2ecqinfg6pkk" path="res://assets/OneSlotPlaceholder.png" id="2_mrusd"]
+
+[resource]
+script = ExtResource("1_hpbjd")
+name = "koziki"
+texture = ExtResource("2_mrusd")
+width = 74
+height = 74
+lvl_req = 15
+base_stats = "Wartość ataku: 14 - 22
+Szybkość ataku +22%"
+rolls = "Silny przeciwko faliopatos +10%
+Siła +8
+Szansa na cios krytyczny +10%
+"
+classes = "Ninja"
+metadata/_custom_type_script = "uid://buskuwqcvllse"
