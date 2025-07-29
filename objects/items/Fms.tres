@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://b5mcw7k4ag266"]
+
+[ext_resource type="Script" uid="uid://buskuwqcvllse" path="res://scripts/classes/itemClass.gd" id="1_c03pa"]
+[ext_resource type="Texture2D" uid="uid://cwx6uyy1dcjmc" path="res://assets/Fms.png" id="2_8fw6s"]
+
+[resource]
+script = ExtResource("1_c03pa")
+name = "Miecz Pełni Księżyca"
+texture = ExtResource("2_8fw6s")
+width = 74
+height = 74
+lvl_req = 30
+base_stats = "Wartość ataku: 96 - 127
+Szybkość ataku +27%"
+rolls = "[color=82ec87]Średnie obrażenia: 32%[/color]
+[color=df4c4a]Obrażenia umiejętności: -8%[/color]
+[color=df4c4a]Szansa na podwojenie fms -10%[/color]
+"
+classes = "Wojownik Ninja Sura"
+metadata/_custom_type_script = "uid://buskuwqcvllse"

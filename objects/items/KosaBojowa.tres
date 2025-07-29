@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://bx0ca5pw0k23g"]
+
+[ext_resource type="Script" uid="uid://buskuwqcvllse" path="res://scripts/classes/itemClass.gd" id="1_vsjti"]
+[ext_resource type="Texture2D" uid="uid://o5v13e3q87ei" path="res://assets/KosaBojowa.png" id="2_xebln"]
+
+[resource]
+script = ExtResource("1_vsjti")
+name = "placeholder"
+texture = ExtResource("2_xebln")
+width = 74
+height = 74
+lvl_req = 15
+base_stats = "Wartość ataku: 68 - 94
+Szybkość ataku +18%"
+rolls = "[color=82ec87]Silny przeciwko faliopatos +10%[/color]
+[color=82ec87]Siła +8[/color]
+
+"
+classes = "Ninja"
+metadata/_custom_type_script = "uid://buskuwqcvllse"

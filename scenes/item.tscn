@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://cdxo6u7rdpwee"]
 
 [ext_resource type="Script" uid="uid://bpefd4s8di1pu" path="res://scripts/item.gd" id="1_4gq7n"]
-[ext_resource type="Resource" uid="uid://injji6ysmgko" path="res://objects/items/placeholder1.tres" id="2_s8enn"]
+[ext_resource type="Resource" uid="uid://injji6ysmgko" path="res://objects/items/Koziki.tres" id="2_s8enn"]
 
 [node name="Item" type="Control"]
 custom_minimum_size = Vector2(74, 74)

@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="Item" load_steps=3 format=3 uid="uid://injji6ysmgko"]
+
+[ext_resource type="Script" uid="uid://buskuwqcvllse" path="res://scripts/classes/itemClass.gd" id="1_14pct"]
+[ext_resource type="Texture2D" uid="uid://hxmwmly3vv7k" path="res://assets/Koziki.png" id="2_y2u22"]
+
+[resource]
+script = ExtResource("1_14pct")
+name = "placeholder"
+texture = ExtResource("2_y2u22")
+width = 74
+height = 74
+lvl_req = 30
+base_stats = "Wartość ataku: 74 - 98
+Szybkość ataku +30%"
+rolls = "[color=df4c4a]Średnie obrażenia: -10%[/color]
+[color=82ec87]Obrażenia umiejętności: 12%[/color]
+[color=82ec87]Silny przeciwko ludziom +10%[/color]
+[color=82ec87]Szansa na cios krytyczny +10%[/color]"
+classes = "Ninja"
+metadata/_custom_type_script = "uid://buskuwqcvllse"

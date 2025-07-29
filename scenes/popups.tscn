@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://cvqsyqk6acgjs"]
 
 [ext_resource type="Script" uid="uid://ceinipw4wgk6n" path="res://scripts/popups.gd" id="1_201id"]
-[ext_resource type="Texture2D" uid="uid://8krp8u5yi80o" path="res://assets/ItemPopUpBox.png" id="1_fk52g"]
+[ext_resource type="Texture2D" uid="uid://c38b8yjq22ia7" path="res://assets/popUpasset.png" id="2_201id"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_201id"]
 
@@ -23,11 +23,12 @@ theme_override_styles/panel = SubResource("StyleBoxTexture_201id")
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_right = 450.0
+offset_left = -225.0
+offset_right = 225.0
 offset_bottom = 370.0
 grow_horizontal = 2
 size_flags_vertical = 3
-texture = ExtResource("1_fk52g")
+texture = ExtResource("2_201id")
 region_rect = Rect2(500, 149, 503, 503)
 patch_margin_left = 18
 patch_margin_top = 30
@@ -74,16 +75,20 @@ text = "Wartość ataku: 237 - 277
 Szybkość Ataku +26%"
 horizontal_alignment = 1
 
-[node name="rolls" type="Label" parent="UI/ItemPopup/NinePatchRect/MarginContainer/VBoxContainer"]
+[node name="rolls" type="RichTextLabel" parent="UI/ItemPopup/NinePatchRect/MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 4
-theme_override_colors/font_color = Color(0.781771, 0.997168, 0.722426, 1)
-text = "Średnie obrażenia: 44%
-Obrażenia umiejętności: 10%
-Szansa na spowolnienie +2%
-Silny przeciwko mistykom +10%"
+bbcode_enabled = true
+text = "[color=82ec87]Średnie obrażenia: 44%[/color]
+[color=df4c4a]Obrażenia umiejętności: -10%[/color]
+[color=82ec87]Szansa na spowolnienie +2%[/color]
+[color=82ec87]Silny przeciwko mistykom +10%[/color]"
+fit_content = true
+scroll_active = false
+autowrap_mode = 0
 horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="class" type="Label" parent="UI/ItemPopup/NinePatchRect/MarginContainer/VBoxContainer"]
 unique_name_in_owner = true

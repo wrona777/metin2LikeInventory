@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b2ecqinfg6pkk"
-path="res://.godot/imported/OneSlotPlaceholder.png-359e5b3be49363aacdbbf03f6ebdcd62.ctex"
+uid="uid://cwx6uyy1dcjmc"
+path="res://.godot/imported/Fms.png-cd572a7168d4aaf90535587a5ce7da35.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/OneSlotPlaceholder.png"
-dest_files=["res://.godot/imported/OneSlotPlaceholder.png-359e5b3be49363aacdbbf03f6ebdcd62.ctex"]
+source_file="res://assets/Fms.png"
+dest_files=["res://.godot/imported/Fms.png-cd572a7168d4aaf90535587a5ce7da35.ctex"]
 
 [params]
 

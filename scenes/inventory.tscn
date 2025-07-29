@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://c4hhr4molfvt5"]
+[gd_scene load_steps=6 format=3 uid="uid://c4hhr4molfvt5"]
 
 [ext_resource type="Texture2D" uid="uid://b8shop1mgf3oq" path="res://assets/metin2Box.png" id="1_qw0r6"]
 [ext_resource type="PackedScene" uid="uid://bves73lw2mxlm" path="res://scenes/slot.tscn" id="2_hj2ta"]
 [ext_resource type="PackedScene" uid="uid://cdxo6u7rdpwee" path="res://scenes/item.tscn" id="3_53g1v"]
-[ext_resource type="Resource" uid="uid://b5mcw7k4ag266" path="res://objects/items/placeholder2.tres" id="4_53g1v"]
+[ext_resource type="Resource" uid="uid://b5mcw7k4ag266" path="res://objects/items/Fms.tres" id="4_53g1v"]
+[ext_resource type="Resource" uid="uid://bx0ca5pw0k23g" path="res://objects/items/KosaBojowa.tres" id="5_yyk2a"]
 
 [node name="Inventory" type="NinePatchRect"]
 anchors_preset = 8
@@ -109,6 +110,10 @@ layout_mode = 2
 
 [node name="Slot17" parent="MarginContainer/GridContainer" instance=ExtResource("2_hj2ta")]
 layout_mode = 2
+
+[node name="Item" parent="MarginContainer/GridContainer/Slot17" instance=ExtResource("3_53g1v")]
+layout_mode = 2
+item = ExtResource("5_yyk2a")
 
 [node name="Slot18" parent="MarginContainer/GridContainer" instance=ExtResource("2_hj2ta")]
 layout_mode = 2
