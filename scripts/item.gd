@@ -55,6 +55,6 @@ func _update_dragged_position() -> void:
 		var mouse_pos = get_local_mouse_position()
 		var texture_size = dragged_item_preview.size
 		dragged_item_preview.position = mouse_pos - texture_size / 2
-
+	
 func set_listening(state: bool) -> void:
 	is_item_dragged = state
