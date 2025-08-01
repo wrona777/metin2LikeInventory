@@ -21,3 +21,10 @@ offset_left = 163.0
 offset_top = 185.0
 offset_right = 420.0
 offset_bottom = 468.0
+
+[node name="cwel" type="Control" parent="."]
+anchors_preset = 0
+offset_left = 159.0
+offset_top = 155.0
+offset_right = 415.0
+offset_bottom = 404.0
