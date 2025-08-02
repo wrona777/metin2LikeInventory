@@ -5,7 +5,7 @@
 
 [resource]
 script = ExtResource("1_vsjti")
-name = "placeholder"
+name = "Kosa Bojowa"
 texture = ExtResource("2_xebln")
 width = 74
 height = 74

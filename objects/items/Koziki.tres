@@ -5,7 +5,7 @@
 
 [resource]
 script = ExtResource("1_14pct")
-name = "placeholder"
+name = "Koziki"
 texture = ExtResource("2_y2u22")
 width = 74
 height = 74
