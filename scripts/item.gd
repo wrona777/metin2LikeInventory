@@ -6,16 +6,11 @@ extends Control
 
 var dragged_item_preview = null
 var is_item_dragged = false
-var original_parent = null
 var saved_item = null
 
 func _ready() -> void:
 	if item:
 		itemSetter()
-
-#func _process(_delta: float) -> void:
-	#if dragged_item_preview:
-		#_update_dragged_position()
 
 func itemSetter() -> void:
 	texture.custom_minimum_size = Vector2(item.width,item.height)
@@ -61,5 +56,6 @@ func _on_texture_mouse_exited() -> void:
 
 func _get_drag_data(at_position: Vector2) -> Variant:
 	saved_item = item.duplicate()
-	print(saved_item.name)
+	saved_item.original_parent = self
 	return saved_item
+	itemNode.queue_free()

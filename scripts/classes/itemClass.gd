@@ -12,3 +12,4 @@ class_name Item
 @export var classes : String #Wojownik Ninja Sura Szaman
 
 var upgrade_lvl : int = 0
+var original_parent = null

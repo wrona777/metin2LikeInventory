@@ -1,8 +1,6 @@
 extends PanelContainer
 
 @onready var panel = $"."
-
-##func _get_drag_data(at_position: Vector2) -> Variant:
 	##print("essa!")
 	##return true
 
