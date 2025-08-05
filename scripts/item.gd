@@ -4,10 +4,8 @@ extends Control
 @onready var itemNode = $"."
 @export var item : Item
 
-var dragged_item_preview = null
-var is_item_dragged = false
 var saved_item = null
-
+var is_dragging = false
 func _ready() -> void:
 	if item:
 		itemSetter()
@@ -24,38 +22,23 @@ func _on_texture_mouse_entered() -> void:
 func _on_texture_mouse_exited() -> void:
 	Popups.HideItemPopup()
 
-#func _on_texture_gui_input(event: InputEvent) -> void:
-	#if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
-		#original_parent = itemNode.get_parent() #Slot
-		#createPreview()
-		#saved_item = item.duplicate()
-		#texture.hide()
-#
-#func createPreview():
-	#dragged_item_preview = TextureRect.new()
-	#dragged_item_preview.texture = texture.texture
-	#dragged_item_preview.mouse_filter = Control.MOUSE_FILTER_IGNORE
-	#
-	#dragged_item_preview.stretch_mode = TextureRect.STRETCH_SCALE
-	#dragged_item_preview.ignore_texture_size = true
-	#dragged_item_preview.size = Vector2(94, 94)
-	#
-	#add_child(dragged_item_preview)
-	#dragged_item_preview.z_index = 999
-	#dragged_item_preview.position = get_local_mouse_position()
-	#set_listening(true)
-#
-#func _update_dragged_position() -> void:
-	#if dragged_item_preview:
-		#var mouse_pos = get_local_mouse_position()
-		#var texture_size = dragged_item_preview.size
-		#dragged_item_preview.position = mouse_pos - texture_size / 2
-#
-#func set_listening(state: bool) -> void:
-	#is_item_dragged = state
-
 func _get_drag_data(at_position: Vector2) -> Variant:
 	saved_item = item.duplicate()
 	saved_item.original_parent = self
-	return saved_item
+	
+	#drag prewiev
+	var drag_preview := Control.new()
+	var preview = TextureRect.new()
+	
+	preview.texture = item.texture
+	preview.ignore_texture_size = true
+	preview.stretch_mode = TextureRect.STRETCH_SCALE
+	preview.custom_minimum_size = Vector2(94, 94)
+	preview.position = -0.5 * preview.custom_minimum_size
+	
+	drag_preview.add_child(preview)
+	set_drag_preview(drag_preview)
+	is_dragging = true
 	itemNode.queue_free()
+	
+	return saved_item

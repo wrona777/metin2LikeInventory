@@ -1,8 +1,6 @@
 extends PanelContainer
 
 @onready var panel = $"."
-	##print("essa!")
-	##return true
 
 func _can_drop_data(at_position: Vector2, data: Variant) -> bool:
 	return data is Item
