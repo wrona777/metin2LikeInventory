@@ -6,6 +6,7 @@ func _can_drop_data(at_position: Vector2, data: Variant) -> bool:
 	return data is Item
 
 func _drop_data(at_position: Vector2, data: Variant) -> void:
+	#przeniesienie itemu
 	var item_scene = preload("res://scenes/item.tscn")
 	var new_item = item_scene.instantiate()
 	new_item.item = data

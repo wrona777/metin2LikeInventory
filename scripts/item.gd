@@ -38,7 +38,6 @@ func _get_drag_data(at_position: Vector2) -> Variant:
 	
 	drag_preview.add_child(preview)
 	set_drag_preview(drag_preview)
-	is_dragging = true
 	itemNode.queue_free()
 	
 	return saved_item
